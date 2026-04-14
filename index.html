@@ -230,39 +230,39 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 <div class="pane active" id="pane-overview">
   <div class="page-header">
     <div class="page-title">Tổng quan cộng đồng</div>
-    <div class="page-sub">Tổng hợp metrics từ 3 Facebook Group — 200 bài gần nhất mỗi thị trường</div>
+    <div class="page-sub">Tổng hợp metrics từ 3 Facebook Group — 200 bài gần nhất mỗi Group</div>
   </div>
 
   <!-- KPIs -->
   <div class="g4">
     <div class="card kpi">
-      <div class="kpi-lbl">Tổng số bài đã phân tích</div>
+      <div class="kpi-lbl">Tổng số group posts đã phân tích</div>
       <div class="kpi-val">600</div>
-      <div class="kpi-sub">200 bài × 3 thị trường</div>
+      <div class="kpi-sub">200 bài × 3 group</div>
     </div>
     <div class="card kpi">
       <div class="kpi-lbl">Total Engagement</div>
       <div class="kpi-val">4,017</div>
-      <div class="kpi-sub"><b>2,531</b> Likes &amp; <b>2,052</b> Comments tổng cộng</div>
+      <div class="kpi-sub"><b>2,531</b> Reacts &amp; <b>2,052</b> Comments tổng cộng</div>
       <div class="kpi-bar"><div class="kpi-bar-f" style="width:100%;background:var(--text-primary);"></div></div>
     </div>
     <div class="card kpi">
       <div class="kpi-lbl">Overall Post Fill Rate <span class="help">?<span class="tip">Post Fill Rate = % of posts that have actual text content. A post with no text (image/video-only, no caption) is counted as "empty". Low fill rate = lower feed quality and less searchable content.</span></span></div>
       <div class="kpi-val" style="color:var(--green);">70%</div>
-      <div class="kpi-sub">422 trong 600 bài có nội dung text</div>
+      <div class="kpi-sub">422 trong 600 bài có nội dung có chứa text</div>
       <div class="kpi-bar"><div class="kpi-bar-f" style="width:70%;background:var(--green);"></div></div>
     </div>
     <div class="card kpi">
-      <div class="kpi-lbl">Bài đơn lẻ tốt nhất</div>
+      <div class="kpi-lbl">Post đạt highest performance</div>
       <div class="kpi-val" style="color:var(--ph-color);">177</div>
-      <div class="kpi-sub">Bài milestone của Philippines — 85 likes + 92 comments</div>
+      <div class="kpi-sub">85 likes + 92 comments (trong group của PH)</div>
     </div>
   </div>
 
   <!-- Channel Performance -->
   <div class="sec" style="margin-top:28px;">
     Channel Performance
-    <span class="help">?<span class="tip">Health status được xác định bởi 3 yếu tố: Post Fill Rate, Average Engagement per Post và mức độ Moderation. Xem giải thích bên dưới.</span></span>
+    <span class="help">?<span class="tip">Health status được xác định bởi 3 yếu tố: Post Fill Rate, Average Engagement per Post và mức độ Active của việc Moderation </span></span>
   </div>
 
   <div class="card" style="padding:0;overflow:hidden;">
@@ -272,15 +272,15 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
       <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <div class="def-row" style="gap:7px;align-items:center;margin:0;">
           <div class="dot" style="background:var(--green);"></div>
-          <span style="font-size:12px;color:var(--text-secondary);"><b>Healthy</b> — Fill rate ≥85%, avg engagement ≥5/post, moderator tích cực tổ chức event thường xuyên</span>
+          <span style="font-size:12px;color:var(--text-secondary);"><b>Healthy</b> — Fill rate ≥85%, avg engagement ≥5/post, moderator tích cực tương tác, tổ chức CMM event</span>
         </div>
         <div class="def-row" style="gap:7px;align-items:center;margin:0;">
           <div class="dot" style="background:var(--amber);"></div>
-          <span style="font-size:12px;color:var(--text-secondary);"><b>Moderate</b> — Fill rate 60–84%, avg engagement 2–5/post, có moderation nhưng chưa có chiến lược rõ ràng</span>
+          <span style="font-size:12px;color:var(--text-secondary);"><b>Moderate</b> — Fill rate 60–84%, avg engagement 2–5/post, có moderation nhưng group vẫn còn nhiều vấn đề, đặc biệt là mua bán</span>
         </div>
         <div class="def-row" style="gap:7px;align-items:center;margin:0;">
           <div class="dot" style="background:var(--red);"></div>
-          <span style="font-size:12px;color:var(--text-secondary);"><b>Critical</b> — Fill rate &lt;60%, avg engagement &lt;2/post, moderation rất thụ động hoặc gần như không có</span>
+          <span style="font-size:12px;color:var(--text-secondary);"><b>Critical</b> — Fill rate &lt;60%, avg engagement &lt;2/post, moderation rất thụ động, gần như không có</span>
         </div>
       </div>
     </div>
@@ -289,9 +289,9 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
       <thead>
         <tr>
           <th style="width:155px;">Market</th>
-          <th>Post Fill Rate <span class="help">?<span class="tip">% trong 200 bài có chứa text. Thanh bar thể hiện giá trị so với 100%.</span></span></th>
-          <th>Avg Likes / Post <span class="help">?<span class="tip">Tổng likes ÷ 200 bài. Tín hiệu engagement thụ động.</span></span></th>
-          <th>Avg Comments / Post <span class="help">?<span class="tip">Tổng comments ÷ 200 bài. Comments = thảo luận chủ động, tín hiệu mạnh hơn likes.</span></span></th>
+          <th>Post Fill Rate <span class="help">?<span class="tip">% post có chứa text trong tổng số 200 post</span></span></th>
+          <th>Avg Reactions / Post <span class="help">?<span class="tip">Tổng reactions ÷ 200 posts </span></span></th>
+          <th>Avg Comments / Post <span class="help">?<span class="tip">Tổng comments ÷ 200 posts</span></span></th>
           <th>Total Engagement</th>
           <th>Status</th>
         </tr>
@@ -327,9 +327,9 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
   <div class="sec">Phân tích Engagement</div>
   <div class="g3">
-    <div class="card"><div class="card-title">Total Engagement theo thị trường</div><canvas id="c-eng" height="220"></canvas></div>
+    <div class="card"><div class="card-title">Total Engagement theo từng group</div><canvas id="c-eng" height="220"></canvas></div>
     <div class="card">
-      <div class="card-title">Activity Category Mix <span class="help">?<span class="tip">Các category được xác định bằng cách quét text bài viết theo keyword tương ứng mỗi ngôn ngữ (EN / Indonesian / Filipino-Tagalog).</span></span></div>
+      <div class="card-title">Activity Category Mix <span class="help">?<span class="tip">Các category được xác định bằng cách quét text bài viết theo keyword tương ứng mỗi ngôn ngữ (Eng / Indonesian / Filipino).</span></span></div>
       <canvas id="c-cat" height="220"></canvas>
     </div>
     <div class="card"><div class="card-title">Community Health Radar</div><canvas id="c-radar" height="220"></canvas></div>
@@ -383,31 +383,31 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="card" style="padding:20px 22px;">
     <div class="post-hdr"><div>Nội dung &amp; Loại bài</div><div>👍</div><div>💬</div><div>Total</div></div>
     <div class="post-row">
-      <div class="post-txt">💖 <b>Special Valentine Event</b> — "How many hearts can you find in this image? Count and comment!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Interactive puzzle</span></div>
+      <div class="post-txt">💖 <b>Special Valentine Event</b> — "How many hearts can you find in this image? Count and comment!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Community Event</span></div>
       <div class="pnum" style="color:var(--id-color);">51</div><div class="pnum" style="color:var(--id-color);">68</div><div class="ptot" style="color:var(--id-color);">119</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">🧧 <b>Chinese New Year event</b> — "Send a screenshot of your diamonds received to claim your prize!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Diamond reward claim</span></div>
+      <div class="post-txt">🧧 <b>Chinese New Year event</b> — "Send a screenshot of your diamonds received to claim your prize!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Community Event</span></div>
       <div class="pnum" style="color:var(--id-color);">20</div><div class="pnum" style="color:var(--id-color);">55</div><div class="ptot" style="color:var(--id-color);">75</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">🎉 <b>Top Contributor Winner Announcement</b> — "DM us to claim your prize!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Community recognition</span></div>
+      <div class="post-txt">🎉 <b>Top Contributor Winner Announcement</b> — "DM us to claim your prize!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Community Event</span></div>
       <div class="pnum" style="color:var(--id-color);">23</div><div class="pnum" style="color:var(--id-color);">45</div><div class="ptot" style="color:var(--id-color);">68</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">"What weapon do you wish gets released in CFL next? Comment below!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Game wishlist / feedback</span></div>
+      <div class="post-txt">"What weapon do you wish gets released in CFL next? Comment below!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">QnA/Feedback</span></div>
       <div class="pnum" style="color:var(--id-color);">10</div><div class="pnum" style="color:var(--id-color);">39</div><div class="ptot" style="color:var(--id-color);">49</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">"Is this update an upgrade or average? Map, meta, weapon, event — spill everything, we'll forward it to the dev team!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">Feedback loop</span></div>
+      <div class="post-txt">"Is this update an upgrade or average? Map, meta, weapon, event — spill everything, we'll forward it to the dev team!"<br><span class="ptag" style="background:var(--id-light);color:var(--id-color);">QnA/Feedback</span></div>
       <div class="pnum" style="color:var(--id-color);">16</div><div class="pnum" style="color:var(--id-color);">33</div><div class="ptot" style="color:var(--id-color);">49</div>
     </div>
   </div>
   <div class="sec">Hành vi người dùng (Local Behaviour Profile)</div>
   <div class="g3">
-    <div class="beh"><div class="beh-icon">🎁</div><div class="beh-title">Reward-Driven Participation</div><div class="beh-body">Users respond intensely to <b>prizes and diamonds</b>. "Prize/Reward" appeared 109 times and "Diamond" 66 times — the two highest-frequency content words in the market.</div></div>
-    <div class="beh"><div class="beh-icon">🏆</div><div class="beh-title">Tournament-First Culture</div><div class="beh-body"><b>101 trong 192</b> bài có nội dung liên quan đến tournament hoặc thi đấu. Bản sắc esports ăn sâu — người dùng coi group như sân nhà cạnh tranh của mình.</div></div>
-    <div class="beh"><div class="beh-icon">💬</div><div class="beh-title">High Two-Way Interaction</div><div class="beh-body">Likes và comments gần như cân bằng (6.7 vs 5.96), nghĩa là người dùng không chỉ react thụ động — họ chủ động <b>thảo luận và trò chuyện</b>. Moderator thúc đẩy điều này bằng các câu hỏi mở.</div></div>
+    <div class="beh"><div class="beh-icon">🎁</div><div class="beh-title">Reward-Driven Participation</div><div class="beh-body">Users thị trường ID rất có hứng thú với các chủ đề liên quan đến <b>phần thuởng của CMM event (ingame và outgame)</b>. "Prize/Reward" xuất hiện 109 lần trong 200 posts và "Diamond" xuất hiện 66 lần — đây là 2 từ khóa xuất hiện nhiều nhất</div></div>
+    <div class="beh"><div class="beh-icon">🏆</div><div class="beh-title">Tournament-First Culture</div><div class="beh-body"><b>101 trong 192</b> bài có nội dung liên quan đến tournament hoặc thi đấu. User tại ID rất thích những content liên quan đến đấu giải, esports và các hoạt động liên quan đến CMM event về esports.</div></div>
+    <div class="beh"><div class="beh-icon">💬</div><div class="beh-title">High Two-Way Interaction</div><div class="beh-body">Chỉ số reactions và comments gần như cân bằng (6.7 vs 5.96), nghĩa là users không chỉ react thụ động mà rất chủ động <b>thảo luận và trò chuyện</b>. Moderator group của ID cũng thúc đẩy điều này bằng nhiều topic câu hỏi mở.</div></div>
   </div>
 </div>
 
@@ -415,7 +415,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 <div class="pane" id="pane-philippines">
   <div class="page-header">
     <div class="page-title">🇵🇭 Philippines <span class="badge b-red" style="font-size:12px;padding:4px 12px;">● Critical</span></div>
-    <div class="page-sub">Group: cflphilippines · Đã phân tích 200 bài · Avg engagement thấp nhất nhưng có bài đơn lẻ đạt đỉnh cao nhất</div>
+    <div class="page-sub">Group: cflphilippines · Đã phân tích 200 posts · Avg engagement thấp nhất trong 3 groups</div>
   </div>
   <div class="g4">
     <div class="card kpi" style="border-top:3px solid var(--ph-color);">
@@ -426,31 +426,31 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <div class="card kpi" style="border-top:3px solid var(--red);">
       <div class="kpi-lbl">Post Fill Rate</div>
       <div class="kpi-val" style="color:var(--red);">42%</div>
-      <div class="kpi-sub">117 trong 200 bài không có text — trống hoặc chỉ có ảnh/video</div>
+      <div class="kpi-sub">117/200 bài không có text - caption trống hoặc chỉ có ảnh/video</div>
       <div class="kpi-bar"><div class="kpi-bar-f" style="width:42%;background:var(--red);"></div></div>
     </div>
     <div class="card kpi" style="border-top:3px solid var(--ph-color);">
-      <div class="kpi-lbl">Avg Likes / Post</div>
+      <div class="kpi-lbl">Avg Reactions / Post</div>
       <div class="kpi-val" style="color:var(--ph-color);">1.14</div>
-      <div class="kpi-sub">Thấp nhất trong cả 3 thị trường</div>
+      <div class="kpi-sub">Thấp nhất trong cả 3 group</div>
     </div>
     <div class="card kpi" style="border-top:3px solid var(--green);">
       <div class="kpi-lbl">Peak Post Engagement</div>
       <div class="kpi-val" style="color:var(--green);">177</div>
-      <div class="kpi-sub">Bài đơn lẻ tốt nhất trong CẢ 3 thị trường — milestone reward</div>
+      <div class="kpi-sub">Top Performance Post tại group</div>
     </div>
   </div>
   <div class="callout callout-blue">
     <div class="callout-icon">💡</div>
     <div>
-      <div class="callout-title">Nghịch lý chính: Tiềm năng cao, thực tế thấp</div>
-      <div class="callout-body">Philippines có <b>average engagement thấp nhất</b> (1.14 likes/post) nhưng lại có <b>bài đơn lẻ tốt nhất</b> trong cả 3 thị trường (177 engagements). Khoảng cách này cho thấy đây là một cộng đồng có thể phản hồi rất tốt — chỉ đơn giản là thiếu sự kích hoạt nhất quán từ phía admin/mod.</div>
+      <div class="callout-title">Nghịch lý chính tại group này: Tiềm năng group và user cao, thực tế thì performance tại group lại thấp</div>
+      <div class="callout-body">Philippines có <b>average engagement thấp nhất</b> (1.14 likes/post). Tuy nhiên cộng đồng Phi rất curious về content Esports (CFLC, National Tournament), content game, rất thiện chí với game. Chỉ đơn giản là thiếu sự active nhất quán từ phía admin/mod tại PH.</div>
     </div>
   </div>
   <div class="g13" style="margin-top:14px;">
     <div class="card"><div class="card-title">Activity Categories (Phân loại hoạt động)</div><canvas id="c-ph-cat" height="270"></canvas></div>
     <div class="card">
-      <div class="card-title">Top Keywords — đã dịch từ tiếng Filipino/Tagalog <span class="help">?<span class="tip">"ptpa" = "xin thử/xác nhận cho tôi" — yêu cầu xác nhận từ cộng đồng. "compe" = competition (tiếng lóng địa phương). "fypシ" = TikTok For You Page tag.</span></span></div>
+      <div class="card-title">Top Keywords<span class="help">?<span class="tip">Đã dịch từ tiếng Phi qua Eng, tiếng Phi lóng cũng đã được included</span></span></div>
       <div class="kw-wrap" id="kw-ph"></div>
     </div>
   </div>
@@ -458,19 +458,19 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="card" style="padding:20px 22px;">
     <div class="post-hdr"><div>Nội dung &amp; Loại bài</div><div>👍</div><div>💬</div><div>Total</div></div>
     <div class="post-row">
-      <div class="post-txt">🔥 <b>Milestone achieved!</b> "Thank you everyone — let's hit the next milestone together!" (UID reward claim)<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Milestone reward</span></div>
+      <div class="post-txt">🔥 <b>Milestone achieved!</b> "Thank you everyone — let's hit the next milestone together!" (UID reward claim)<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Community Event</span></div>
       <div class="pnum" style="color:var(--ph-color);">85</div><div class="pnum" style="color:var(--ph-color);">92</div><div class="ptot" style="color:var(--green);">177 ★</div>
     </div>
     <div class="post-row">
-      <div class="post-txt"><b>CFL MVPs of the Month</b> — Shoutout to our most active members for March 2026! Prize via mod DM.<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Community recognition</span></div>
+      <div class="post-txt"><b>CFL MVPs of the Month</b> — Shoutout to our most active members for March 2026! Prize via mod DM.<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Community Event</span></div>
       <div class="pnum" style="color:var(--ph-color);">16</div><div class="pnum" style="color:var(--ph-color);">11</div><div class="ptot" style="color:var(--ph-color);">27</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">"Is this legit, bosses? Please try / verify for me." <i>(original: "Legit to mga boss? Ptpa po")</i><br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Community verification ("ptpa")</span></div>
+      <div class="post-txt">"Is this legit, bosses? Please try / verify for me." <i>(original: "Legit to mga boss? Ptpa po")</i><br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Normal Post</span></div>
       <div class="pnum" style="color:var(--ph-color);">5</div><div class="pnum" style="color:var(--ph-color);">20</div><div class="ptot" style="color:var(--ph-color);">25</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">"Handsome COP character abuser" — #CrossfireLegends #cflcreator #cflph #CFLTacticalUnit<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Creator flex / TikTok-style</span></div>
+      <div class="post-txt">"Handsome COP character abuser" — #CrossfireLegends #cflcreator #cflph #CFLTacticalUnit<br><span class="ptag" style="background:var(--ph-light);color:var(--ph-color);">Content Creator Post</span></div>
       <div class="pnum" style="color:var(--ph-color);">12</div><div class="pnum" style="color:var(--ph-color);">0</div><div class="ptot" style="color:var(--ph-color);">12</div>
     </div>
     <div class="post-row">
@@ -480,9 +480,9 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   </div>
   <div class="sec">Hành vi người dùng (Local Behaviour Profile)</div>
   <div class="g3">
-    <div class="beh"><div class="beh-icon">📱</div><div class="beh-title">Social-Media Native</div><div class="beh-body">Users heavily use <b>TikTok/Reels hashtags</b> (#cflcreator, #CFLTacticalUnit, #fypシ), signalling content is made for viral reach — not just group discussion. Creator identity is strong here.</div></div>
-    <div class="beh"><div class="beh-icon">🤝</div><div class="beh-title">Verification-Seeking</div><div class="beh-body">"Ptpa" (xin thử/xác nhận hộ tôi) xuất hiện 11 lần. Người dùng tin vào <b>ý kiến đồng nghiệp</b> trước khi hành động — content được cộng đồng xác nhận lan nhanh hơn thông báo từ admin.</div></div>
-    <div class="beh"><div class="beh-icon">⚠️</div><div class="beh-title">Low Content Density</div><div class="beh-body"><b>58.5% bài viết không có text</b> — ảnh hoặc video đăng lên mà không kèm caption. Đây là lỗ hổng về moderation hoặc thói quen đăng bài để reach thay vì thảo luận.</div></div>
+    <div class="beh"><div class="beh-icon">📱</div><div class="beh-title">Social-Media Native</div><div class="beh-body">Content trong cộng đồng này đa số đến từ Creators (#cflcreator, #CFLTacticalUnit, #fypシ), content đa số chỉ để kiếm reach qua nền tảng tiktok, không dùng để raise discussion tại group. Có thể thấy tiềm năng khai thác creator ở đây lớn.</div></div>
+    <div class="beh"><div class="beh-icon">🤝</div><div class="beh-title">Verification-Seeking</div><div class="beh-body"> Keyword lóng "Ptpa" (xin thử/xác nhận hộ tôi) xuất hiện 11 lần. Người dùng tin vào <b>ý kiến cộng đồng</b> trước khi hành động mua 1 cái gì đó trong game. Có thể thấy cộng đồng này, user dễ bị tác động bởi 1 group người khác.</div></div>
+    <div class="beh"><div class="beh-icon">⚠️</div><div class="beh-title">Low Content Density</div><div class="beh-body"><b>58.5% bài viết không có text</b> — ảnh hoặc video đăng lên mà không kèm caption. Đây cũng là lỗ hổng về moderation của mod group, chưa có rule cụ thể về nội dung hoặc thói quen của cộng đồng này là đăng bài để reach qua nền tảng khác thay vì thảo luận.</div></div>
   </div>
 </div>
 
@@ -490,7 +490,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 <div class="pane" id="pane-global">
   <div class="page-header">
     <div class="page-title">🌐 Global <span class="badge b-amber" style="font-size:12px;padding:4px 12px;">● Moderate</span></div>
-    <div class="page-sub">Group ID: 1067833915407180 · Đã phân tích 200 bài · Group đa ngôn ngữ, thiếu định hướng và identity rõ ràng</div>
+    <div class="page-sub">Group ID: 1067833915407180 · Đã phân tích 200 posts · Group gồm đa ngôn ngữ (Anh, Phi, Indo, Việt), thiếu định hướng và chưa có identity rõ ràng</div>
   </div>
   <div class="g4">
     <div class="card kpi" style="border-top:3px solid var(--gl-color);">
@@ -501,31 +501,31 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <div class="card kpi" style="border-top:3px solid var(--gl-color);">
       <div class="kpi-lbl">Post Fill Rate</div>
       <div class="kpi-val" style="color:var(--amber);">74%</div>
-      <div class="kpi-sub">147 trong 200 bài có nội dung text</div>
+      <div class="kpi-sub">147/200 bài có nội dung caption kèm ảnh hoặc video ơ</div>
       <div class="kpi-bar"><div class="kpi-bar-f" style="width:74%;background:var(--amber);"></div></div>
     </div>
     <div class="card kpi" style="border-top:3px solid var(--gl-color);">
-      <div class="kpi-lbl">Comments vs Likes Ratio</div>
+      <div class="kpi-lbl">Comments vs Reactions Ratio</div>
       <div class="kpi-val" style="color:var(--gl-color);">1.7×</div>
-      <div class="kpi-sub">Comments vượt trội hơn likes — người dùng phàn nàn nhiều hơn là ủng hộ</div>
+      <div class="kpi-sub">Comments vượt trội hơn Reactions, tuy nhiên đa số comments của users là phàn nàn nhiều hơn là ủng hộ</div>
     </div>
     <div class="card kpi" style="border-top:3px solid var(--red);">
       <div class="kpi-lbl">#1 Content Type</div>
       <div class="kpi-val" style="color:var(--red);font-size:20px;padding-top:4px;">Trading</div>
-      <div class="kpi-sub">Bài mua/bán account chiếm đa số — không phải mục đích ban đầu của group</div>
+      <div class="kpi-sub">Bài mua/bán account chiếm đa số, ảnh huởng nhiều đến group health, cũng nói lên việc NPH global tạo điều kiện cho mua bán account trái phép</div>
     </div>
   </div>
   <div class="callout callout-amber">
     <div class="callout-icon">⚠️</div>
     <div>
-      <div class="callout-title">Phát hiện: Group đang trong tình trạng "Identity Crisis"</div>
-      <div class="callout-body">Group Global <b>không có mục đích rõ ràng</b>. Group đang bị dùng đồng thời như một chợ mua bán account, bảng phàn nàn, và nơi bài của Philippines tràn sang. Nếu không có focus và quy tắc được thực thi, cộng đồng không thể phát triển có ý nghĩa.</div>
+      <div class="callout-title">Group đang trong tình trạng "Identity Crisis"</div>
+      <div class="callout-body">Group Global <b>không có rule rõ ràng</b>. Group official nhưng đang bị dùng đồng thời như một chợ mua bán account, tổng hợp complaints và là group thứ 2 của user Philippines tràn sang. Nếu không có rules set thì cộng đồng không thể phát triển và khó có thể revive trong tương lai khi mà user đã quen với ecosystem độc hại này</div>
     </div>
   </div>
   <div class="g13" style="margin-top:14px;">
     <div class="card"><div class="card-title">Activity Categories (Phân loại hoạt động)</div><canvas id="c-gl-cat" height="270"></canvas></div>
     <div class="card">
-      <div class="card-title">Top Keywords — đã dịch <span class="help">?<span class="tip">Pha trộn tiếng Anh và Tagalog. "masipag" = chăm chỉ/năng động; "laro" = chơi/game; "kung" = nếu (câu điều kiện). Hầu hết xuất hiện trong bài rao bán account hoặc tuyển thành viên.</span></span></div>
+      <div class="card-title">Top Keywords — đã dịch qua Eng <span class="help">?<span class="tip">Pha trộn tiếng Anh và tiếng Phi. "masipag" = chăm chỉ/năng động; "laro" = chơi/game; "kung" = nếu. Hầu hết xuất hiện trong bài rao bán account hoặc tuyển thành viên (clan recruitment).</span></span></div>
       <div class="kw-wrap" id="kw-gl"></div>
     </div>
   </div>
@@ -533,15 +533,15 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="card" style="padding:20px 22px;">
     <div class="post-hdr"><div>Nội dung &amp; Loại bài</div><div>👍</div><div>💬</div><div>Total</div></div>
     <div class="post-row">
-      <div class="post-txt"><b>"DEDGEYMMMMMMMMMMM!"</b> — Viral meme/reaction post, no substantive content<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Meme / entertainment</span></div>
+      <div class="post-txt"><b>"DEDGEYMMMMMMMMMMM!"</b> — Viral meme/reaction post, không có content nào khác hữu ích<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Normal Post</span></div>
       <div class="pnum" style="color:var(--gl-color);">25</div><div class="pnum" style="color:var(--gl-color);">54</div><div class="ptot" style="color:var(--gl-color);">79</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">"Please consider hiring me as an admin of this group to help maintain a healthy environment."<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Admin application (humour)</span></div>
+      <div class="post-txt">"Please consider hiring me as an admin of this group to help maintain a healthy environment."<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Admin application</span></div>
       <div class="pnum" style="color:var(--gl-color);">40</div><div class="pnum" style="color:var(--gl-color);">21</div><div class="ptot" style="color:var(--gl-color);">61</div>
     </div>
     <div class="post-row">
-      <div class="post-txt">Formal letter-style admin application — "I am active, responsible, committed to a positive environment."<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Admin application (humour)</span></div>
+      <div class="post-txt">Nhiều user còn đứng ra ứng tuyển làm Gr Mod để thanh lọc group — "I am active, responsible, committed to a positive environment."<br><span class="ptag" style="background:var(--gl-light);color:var(--gl-color);">Admin application</span></div>
       <div class="pnum" style="color:var(--gl-color);">39</div><div class="pnum" style="color:var(--gl-color);">22</div><div class="ptot" style="color:var(--gl-color);">61</div>
     </div>
     <div class="post-row">
@@ -555,9 +555,9 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   </div>
   <div class="sec">Hành vi người dùng (Local Behaviour Profile)</div>
   <div class="g3">
-    <div class="beh"><div class="beh-icon">💸</div><div class="beh-title">Account Trading Marketplace</div><div class="beh-body">The most common user-generated post type involves <b>buying/selling game accounts</b> — keywords: "account for sale", "premium", "willing", "hardworking/active" (masipag). This harms the game ecosystem.</div></div>
-    <div class="beh"><div class="beh-icon">😤</div><div class="beh-title">Complaint-Heavy Culture</div><div class="beh-body">Comments nhiều hơn likes tỷ lệ 1.7:1 — bài viết tạo ra <b>tranh luận và xả cảm xúc tiêu cực hơn là sự ủng hộ</b>. "Dead game", "lose streak", "cheater" xuất hiện thường xuyên. Một narrative tiêu cực đang hình thành.</div></div>
-    <div class="beh"><div class="beh-icon">🌏</div><div class="beh-title">Mixed Language, No Identity</div><div class="beh-body">Nội dung là hỗn hợp <b>Filipino/Tagalog + tiếng Anh</b>. Bài từ market Philippines đang tràn sang Global group, cho thấy content moderation lỏng lẻo và không có định nghĩa rõ về đối tượng độc giả.</div></div>
+    <div class="beh"><div class="beh-icon">💸</div><div class="beh-title">Account Trading Marketplace</div><div class="beh-body">Đa số các posts đều liên quan đến <b>mua bán trái phép tài khoản CFL</b> — keywords: "account for sale", "premium", "willing", "hardworking/active" (masipag). Gây hại tới ecosystem của group nói chung và sản phẩm nói riêng.</div></div>
+    <div class="beh"><div class="beh-icon">😤</div><div class="beh-title">Complaint-Heavy Culture</div><div class="beh-body">Comments nhiều hơn reactions tỷ lệ 1.7:1 — posts tạo ra mang ý nghĩa <b>negative sentiments hơn là ủng hộ</b>. "Dead game", "lose streak", "cheater" xuất hiện thường xuyên. Một narrative tiêu cực đang hình thành trong cộng đồng global.</div></div>
+    <div class="beh"><div class="beh-icon">🌏</div><div class="beh-title">Mixed Language, No Identity</div><div class="beh-body">Nội dung là hỗn hợp <b> giữa tiếng Phi, Eng, Indo, Việt</b>. Đa số các user từ market Philippines đang tràn sang Global group khá nhiều, cho thấy content moderation lỏng lẻo về thống nhất ngôn ngữ và không có định nghĩa rõ về đối tượng user trong group.</div></div>
   </div>
 </div>
 
@@ -576,7 +576,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
           <span class="insight-mkt">🇮🇩 Indonesia</span>
           <span class="badge b-green">● Healthy</span>
         </div>
-        <div class="insight-sub">Thị trường ngôi sao — duy trì và nhân rộng những gì đang hiệu quả</div>
+        <div class="insight-sub">Thị trường có tiềm năng — cần duy trì và nhân rộng những gì đang hiệu quả</div>
       </div>
       <div class="score-wrap">
         <div class="score-num" style="color:var(--green);">9<span style="font-size:16px;font-weight:400;color:var(--text-muted);">/10</span></div>
@@ -585,14 +585,13 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     </div>
     <div class="insight-body">
       <div class="assess">
-        Indonesia là <em>thị trường mạnh nhất</em> với 2,531 total engagement — <b>chiếm 63% tổng engagement của cả 3 thị trường gộp lại</b>. Fill rate 96% xác nhận cộng đồng cực kỳ active. Hành vi người dùng xoay quanh 3 trụ cột rõ ràng: <b>Reward/Diamond, Tournament và Game Meta</b> — một tam giác giữ retention rất hiệu quả. Moderator đang làm rất tốt trong việc tổ chức event và thúc đẩy thảo luận hai chiều.<br><br>
-        Lưu ý: keyword "March" xuất hiện rất nhiều cho thấy hoạt động event dày đặc trong tháng 3 — cần duy trì momentum này sang tháng 4 và các tháng tiếp theo. Các bài Bug/complaint (41 bài) cần được theo dõi trước khi leo thang.
+        Indonesia có <em>group ổn định nhất</em> với 2,531 total engagement — <b>chiếm 63% tổng engagement của cả 3 group gộp lại</b>. Fill rate 96% xác nhận cộng đồng khá active. Hành vi người dùng xoay quanh 3 trụ cột rõ ràng: <b>Reward/Diamond, Tournament và Game Meta</b> — một tam giác giữ group health rất hiệu quả. Moderator cũng đang làm rất tốt trong việc tổ chức event CMM và thúc đẩy thảo luận hai chiều.<br><br>
+        Keyword "March" cũng xuất hiện rất nhiều cho thấy hoạt động event dày đặc trong tháng 3 — cần duy trì momentum này sang tháng 4 và các tháng tiếp theo bằng các content updates. Các bài Bug/complaint (41 bài) cũng cho thấy được cộng đồng rất quan tâm về sản phẩm, quan tâm về trải nghiệm và mong muốn NPH fix lỗi nhanh.
       </div>
       <div class="act-title">Hành động đề xuất</div>
-      <div class="act"><span class="act-n">01</span><div><b>Maintain bi-weekly event cadence.</b> Valentine and Lunar New Year events drove the highest engagement. Apply cultural calendar marketing — Eid/Lebaran, Independence Day (Aug 17) — for upcoming events to keep the community activated.</div><span class="pchip ch-lo">Ongoing</span></div>
-      <div class="act"><span class="act-n">02</span><div><b>Mở rộng chương trình Top Contributor.</b> Các bài thông báo người chiến thắng đạt 68 comments. Thêm các lớp gamification: leaderboard hàng tuần, community badge, thưởng diamond độc quyền cho top 10 contributor mỗi tháng.</div><span class="pchip ch-med">Trung bình</span></div>
-      <div class="act"><span class="act-n">03</span><div><b>Tạo kênh feedback chính thức có cấu trúc.</b> 41 bài phàn nàn về bug/meta đang rải rác khắp feed. Chạy bài "Community Aspirations" được ghim mỗi tháng để tập hợp feedback vào một chỗ, thay vì để nó lan ra như tiếng ồn.</div><span class="pchip ch-med">Trung bình</span></div>
-      <div class="act"><span class="act-n">04</span><div><b>Phát triển hệ thống esports league nhiều cấp.</b> Tournament/Competition là category hoạt động #1. Xây dựng cấu trúc league theo tầng (Bronze → Silver → Garudaku Pro) để cho người chơi competitive một lộ trình tiến bộ rõ ràng và lý do để tiếp tục active.</div><span class="pchip ch-lo">Chiến lược dài hạn</span></div>
+      <div class="act"><span class="act-n">01</span><div><b>Duy trì các CMM event mang thiên huớng kết hợp với lễ lớn</b> Valentine & Lunar New Year CMM events có highest engagement. Có thể áp dụng các lễ của người Indo như Eid/Lebaran, Independence Day (17/8)... — cho các events tiếp theo, tặng code hay VP ingame để keep engagements trong group, nghiên cứu thêm các mechanic event khác.</div><span class="pchip ch-lo">Prioritize</span></div>
+      <div class="act"><span class="act-n">02</span><div><b>Mở rộng chương trình Top Contributor/Top Content Creator.</b> Các bài Winner Announcements có khá nhiều users comment. User tại ID rất thích được recognition public. Có thể áp dụng thêm các layer recognition như: leaderboard hàng tuần, community badge,... để maximize động lực của user.</div><span class="pchip ch-med">Prioritize</span></div>
+      <div class="act"><span class="act-n">03</span><div><b>Phát triển hệ thống esports community đa nền tảng (online/offline)</b> Tournament/Competition là category hoạt động #1 tại group này. Xây dựng các community offines và các custom online bám sát product updates để keep active người chơi hàng tháng.</div><span class="pchip ch-lo">Long-term tactic</span></div>
     </div>
   </div>
 
@@ -604,7 +603,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
           <span class="insight-mkt">🇵🇭 Philippines</span>
           <span class="badge b-red">● Critical</span>
         </div>
-        <div class="insight-sub">Cần chú ý khẩn cấp — tiềm năng cao nhưng mức độ kích hoạt rất thấp</div>
+        <div class="insight-sub">Cần chú ý để điều chỉnh — tiềm năng cao nhưng active của user rất thấp</div>
       </div>
       <div class="score-wrap">
         <div class="score-num" style="color:var(--red);">4<span style="font-size:16px;font-weight:400;color:var(--text-muted);">/10</span></div>
@@ -613,15 +612,15 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     </div>
     <div class="insight-body">
       <div class="assess">
-        Philippines đang có <em>vấn đề nghiêm trọng về content volume</em>: <b>58.5% bài viết không có text</b> — tỷ lệ bài trống cao nhất trong cả 3 thị trường. Điều này cho thấy group đang được dùng chủ yếu để chia sẻ ảnh/video không có caption, hoặc thành viên không được khuyến khích viết nội dung.<br><br>
-        Một nghịch lý quan trọng: bài đơn lẻ có engagement cao nhất trong cả 3 thị trường lại thuộc về Philippines — <b>177 engagements từ một bài milestone reward</b>. Điều này tiết lộ tiềm năng chưa được khai thác rất lớn. Người dùng Philippines phản hồi mạnh mẽ với reward và sự ghi nhận công khai, nhưng những "đòn bẩy" này chưa được admin sử dụng nhất quán.<br><br>
-        Hành vi đặc trưng: định hướng creator (dùng nhiều hashtag TikTok/Reels), tìm kiếm xác nhận từ cộng đồng ("ptpa" = xin xác nhận hộ tôi), và nhiều nội dung tuyển thành viên clan — tất cả đều chỉ ra <em>social bonding là động lực engagement chính</em>.
+        Philippines đang có <em>vấn đề nghiêm trọng về content volume</em>: <b>58.5% bài viết không có text</b> — tỷ lệ bài trống cao nhất trong cả 3 group. Điều này cho thấy group đang được dùng chủ yếu để drive reach tới 1 nền tảng khác, hoặc behaviour của user tại đây không thích viết caption.<br><br>
+        User tại Philippines có high engagements với event reward và public recognition, tuy nhiên moderator cộng đồng này chưa push nhiều về 2 khía cạnh này. User phải tự đi tìm kiếm recognition thông qua chia sẻ content để drive user qua nền tảng khác.<br><br>
+        Hành vi đặc trưng của đa số user: dùng các hashtag của CC, thuờng xuyên tìm kiếm xác nhận từ cộng đồng ("ptpa" = xin xác nhận hộ tôi/góp ý hộ tôi), và nhiều nội dung tuyển thành viên clan — tất cả đều cho thấy được <em>social bonding là động lực engagement chính tại group này</em>.
       </div>
       <div class="act-title">Hành động đề xuất</div>
-      <div class="act"><span class="act-n">01</span><div><b>Triển khai Milestone Campaign định kỳ ngay lập tức.</b> Bài milestone reward đạt 177 engagements — cao nhất trong tất cả các thị trường. Lên lịch bài milestone mỗi 2 tuần kèm cơ chế UID claim. Đây là đòn bẩy nhanh nhất để tăng engagement ngay.</div><span class="pchip ch-hi">Khẩn cấp</span></div>
-      <div class="act"><span class="act-n">02</span><div><b>Ra mắt Creator Program chính thức.</b> Philippines có lượng creator active dùng #cflcreator và #CFLTacticalUnit. Giới thiệu verified creator badge và quyền lợi độc quyền (truy cập content sớm, thưởng diamond) để giữ chân influencer địa phương với group.</div><span class="pchip ch-hi">Cao</span></div>
-      <div class="act"><span class="act-n">03</span><div><b>Áp dụng chính sách bắt buộc caption.</b> 117 trong 200 bài không có text. Đặt quy tắc rõ ràng: mỗi bài phải có ít nhất một câu caption. Moderator cần ghim hướng dẫn và chủ động react/comment vào các bài có caption để củng cố hành vi mong muốn.</div><span class="pchip ch-hi">Cao</span></div>
-      <div class="act"><span class="act-n">04</span><div><b>Tăng tần suất MVP recognition từ hàng tháng lên hàng tuần.</b> Bài MVP tháng 3 đạt kết quả tốt (27 engagements). Tăng tần suất ghi nhận sẽ duy trì momentum — người dùng Philippines đặc biệt nhạy cảm với sự ghi nhận công khai và xác nhận xã hội.</div><span class="pchip ch-med">Trung bình</span></div>
+      <div class="act"><span class="act-n">01</span><div><b>Triển khai Milestone Campaign cho các social platforms để drive thêm đa dạng thể loại user hơn.</b> User hiện tại ở group này đang khá trầm, cần các tactics tăng số lượng users join group để khai thác thêm các tệp users khác, kích thích thảo luận và educate user nhiều hơn về style của group.</div><span class="pchip ch-hi">Prioritize</span></div>
+      <div class="act"><span class="act-n">02</span><div><b>Ra mắt Creator Program chính thức</b> Philippines có lượng creator active rất nhiều, đặc biệt active về mảng esports. Đưa ra các quyền lợi độc quyền như đang làm tại CC Việt Nam để giữ chân creator địa phương với group.</div><span class="pchip ch-hi">Prioritize</span></div>
+      <div class="act"><span class="act-n">03</span><div><b>Áp dụng chính sách content moderation quyết liệt hơn</b> 117 trong 200 bài không có text. Set rules rõ ràng hơn cho group: mỗi bài phải có ít nhất một câu caption. Moderator cần ghim hướng dẫn và chủ động react/comment vào các bài có caption để củng cố hành vi mong muốn cho users</div><span class="pchip ch-hi">Prioritize</span></div>
+      <div class="act"><span class="act-n">04</span><div><b>Start các chương trình Top Contributor, Top Content Creator</b> Users Philippines đặc biệt nhạy cảm với sự ghi nhận công khai. Khi launch 2 program này sẽ kích thích được thêm tệp Creator chia sẻ nội dung ngay tại Group, không bị drive user sang nền tảng khác</div><span class="pchip ch-med">Trung bình</span></div>
     </div>
   </div>
 
@@ -633,7 +632,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
           <span class="insight-mkt">🌐 Global</span>
           <span class="badge b-amber">● Moderate</span>
         </div>
-        <div class="insight-sub">Cần tái định vị — mục đích cộng đồng hiện tại chưa được xác định</div>
+        <div class="insight-sub">Cần tái định vị lại tổng thể group để duy trì bộ mặt của group global</div>
       </div>
       <div class="score-wrap">
         <div class="score-num" style="color:var(--amber);">5<span style="font-size:16px;font-weight:400;color:var(--text-muted);">/10</span></div>
@@ -642,15 +641,15 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     </div>
     <div class="insight-body">
       <div class="assess">
-        Group Global đang có <em>identity crisis</em>: loại content chiếm đa số (sau "uncategorised") là <b>mua/bán account</b> — không phải mục đích của một community group. Nhiều bài viết tiếng Philippines đang xuất hiện ở đây, cho thấy content moderation yếu.<br><br>
-        Bài có performance cao nhất — "DEDGEYMMMM" (79 engagements) — là một meme không có nội dung thực chất. Cả hai bài "xin làm admin" (61 engagements mỗi bài) viral nhờ hài hước, không phải vì giá trị thông tin. Điều này cho thấy cộng đồng đang tìm kiếm <em>sự giải trí hơn là thông tin</em>.<br><br>
-        Narrative "dead game" đang lan rộng trong comments (comments nhiều hơn likes tỷ lệ 1.7:1) có thể ảnh hưởng đến player retention nếu không được xử lý kịp thời.
+        Group Global đang có <em>identity crisis</em>: loại content chiếm đa số (sau "uncategorised") là <b>mua/bán account</b> — không phải mục đích của một community group từ voice official. Posts thì pha trộn giữa tiếng anh - phi - indo - Việt, cho thấy content moderation yếu.<br><br>
+        Bài có performance cao nhất — "DEDGEYMMMM" (79 engagements) lại là một post meme. Cả hai bài "xin làm admin" (61 engagements mỗi bài) viral nhờ content mỉa mai, chứng tỏ quản trị group rất loạn. Điều này cho thấy cộng đồng cũng không rely được ở group này nhiều để giao lưu học hỏi.<br><br>
+        Narrative "dead game" đang lan rộng trong mục comments có thể ảnh hưởng đến player retention nếu không được xử lý kịp thời.
       </div>
       <div class="act-title">Hành động đề xuất</div>
-      <div class="act"><span class="act-n">01</span><div><b>Xác định và ghim mục đích group rõ ràng.</b> Hiện tại group không có identity. Cần quyết định: Global là hub tin tức, cộng đồng nói tiếng Anh, hay hub kết nối cross-market? Ghim thông báo với quy tắc group và định hướng nội dung, sau đó thực thi nhất quán.</div><span class="pchip ch-hi">Khẩn cấp</span></div>
-      <div class="act"><span class="act-n">02</span><div><b>Cấm bài rao bán account và thực thi nghiêm.</b> Mua/bán account là loại bài người dùng đăng phổ biến nhất. Điều này gây hại cho hệ sinh thái game. Đặt quy tắc tự động xóa và ghim cảnh báo rõ ràng.</div><span class="pchip ch-hi">Cao</span></div>
-      <div class="act"><span class="act-n">03</span><div><b>Đối phó negative sentiment bằng nội dung tích cực.</b> Tạo bài "Good News" hàng tuần: điểm nổi bật của patch, event sắp tới, câu chuyện thành công của player. Chủ động đưa tín hiệu tích cực lên feed để pha loãng narrative "dead game" đang lớn dần.</div><span class="pchip ch-med">Trung bình</span></div>
-      <div class="act"><span class="act-n">04</span><div><b>Tận dụng văn hóa meme một cách có chủ đích.</b> "DEDGEYMMMM" viral nhờ giá trị giải trí. Tạo slot meme/fun chính thức hàng tuần (ví dụ: "Friday Fun") để chuyển hóa năng lượng đó thành branded content thay vì các bài đăng ngẫu nhiên không kiểm soát.</div><span class="pchip ch-lo">Thấp</span></div>
+      <div class="act"><span class="act-n">01</span><div><b>Xác định và đưa rules group rõ ràng.</b> Hiện tại group không có rules, không có ngôn ngữ nhất định. Cần quyết định: Global group là hub để anh em giao lưu, cộng đồng phải nói tiếng Anh mới được duyệt bài. Ghim thông báo với quy tắc group và định hướng nội dung lại cho users</div><span class="pchip ch-hi">Prioritize</span></div>
+      <div class="act"><span class="act-n">02</span><div><b>Cấm bài rao bán account và thực thi nghiêm túc việc này.</b> Mua/bán account là loại bài user đăng nhiều nhất. Như đã nói điều này gây hại tới group health. Đặt moderator assist tự động xóa các bài mua bán account và dịch vụ liên quan CFL và ghim cảnh báo rõ ràng.</div><span class="pchip ch-hi">Prioritize</span></div>
+      <div class="act"><span class="act-n">03</span><div><b>Moderate negative sentiment, điều chỉnh lại bằng các nội dung tích cực.</b> Chia sẻ các điểm nổi bật của patch update, event sắp tới, câu chuyện thành công của player... Chủ động đưa tín hiệu tích cực lên feed để pha loãng narrative "dead game" đang có tại group.</div><span class="pchip ch-med">Prioritize</span></div>
+      <div class="act"><span class="act-n">04</span><div><b>Tận dụng văn hóa meme một cách có chủ đích.</b> "DEDGEYMMMM" viral nhờ giá trị giải trí. Tạo event CMM meme/funny content hàng tháng để chuyển hóa năng lượng đó thành branded content thay vì các bài đăng ngẫu nhiên không kiểm soát.</div><span class="pchip ch-lo">Should do</span></div>
     </div>
   </div>
 </div>
